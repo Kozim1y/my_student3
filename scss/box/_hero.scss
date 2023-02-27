@@ -1,0 +1,115 @@
+.hero-box {
+	background-color: #fff;
+	padding: 35px 0;
+}
+
+.hero {
+	@include flexBox(flex, center, center, nowrap);
+}
+
+.sell-card {
+	text-align: center;
+}
+
+.sell-btn {
+	@include allBtn($c-b, none, none, 12px 23px);
+	@include textStyle(14px, 900, 14px, #000);
+	font-family: "Serif pro";
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:hover {
+		scale: 1.1;
+	}
+
+	&:active {
+		scale: 1;
+	}
+}
+.hero-card {
+	@include flexBox(flex, space-between, center, nowrap);
+	padding-left: 50px;
+}
+.h-content-box {
+	@include textStyle(16px, 500, 19px, #999);
+	font-family: "Serif pro";
+}
+.content-themme {
+	@include textStyle(16px, 800, 19px, $bc-b);
+	font-family: "Serif pro";
+	margin: 10px 0;
+}
+.content-h-text {
+	@include textStyle(40px, 800, 50px, #2a2a2a);
+	font-family: "Serif pro";
+	margin: 10px 0;
+}
+
+.h-content-btn {
+	@include allBtn($bc-b, none, none, 12px 23px);
+	@include textStyle(14px, 900, 14px, #fff);
+	margin-top: 40px;
+
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:hover {
+		scale: 1.1;
+	}
+
+	&:active {
+		scale: 1;
+	}
+}
+.h-img-box {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.h-ct-item-none {
+	display: none;
+}
+.h-categories-line {
+	@include flexBox(flex, space-between, center, nowrap);
+	padding: 0px 0;
+}
+.h-ct-item {
+	width: 270px;
+	height: 270px;
+	text-align: center;
+
+	button {
+		margin-top: 5px;
+		@include textStyle(22px, 900, 14px, #000);
+	}
+}
+
+@media (max-width: 1016px) {
+	.h-categories-line {
+		overflow-x: scroll;
+	}
+}
+
+@media (max-width: 943px) {
+	.sell-box {
+		display: none;
+	}
+
+	.h-ct-item-none {
+		display: block;
+	}
+}
+
+@media (max-width: 710px) {
+	.hero-card {
+		flex-direction: column;
+		text-align: center;
+		padding: 0;
+	}
+
+	.h-content-btn {
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+}

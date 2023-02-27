@@ -1,0 +1,188 @@
+.teas-box {
+	background-color: #fff;
+	padding: 20px 0;
+}
+.teas {
+	@include flexBox(flex, space-between, center, nowrap);
+}
+.lime {
+	background-image: url("../images/Rectangle\ 3lime-tea.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 560px;
+	padding: 38px 0;
+	padding-right: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-right: 20px;
+}
+.lime-text {
+	@include textStyle(28px, 900, 50px, #fff);
+	font-family: "Serif pro";
+}
+.lime-info {
+	@include textStyle(22px, 400, 25px, #fff);
+	font-family: "Serif pro";
+	padding: 10px 0;
+}
+.lime-btn {
+	@include allBtn($bc-b, none, none, 18px 23px);
+	@include textStyle(14px, 600, 13px, #fff);
+	font-family: "Serif pro";
+
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:hover {
+		scale: 1.1;
+	}
+
+	&:active {
+		scale: 1;
+	}
+}
+
+.fantas {
+	background-image: url("../images/Rectangle\ 3fantaa-sea.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 560px;
+	padding: 33px 0;
+	padding-right: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.fantas-text {
+	@include textStyle(28px, 900, 30px, #fff);
+	font-family: "Serif pro";
+	max-width: 220px;
+}
+.fantas-info {
+	@include textStyle(22px, 400, 25px, #fff);
+	font-family: "Serif pro";
+	padding: 10px 0;
+}
+.fantas-btn {
+	@include allBtn($bc-b, none, none, 18px 23px);
+	@include textStyle(14px, 600, 13px, #fff);
+	font-family: "Serif pro";
+
+	cursor: pointer;
+	transition: all 0.5s ease;
+
+	&:hover {
+		scale: 1.1;
+	}
+
+	&:active {
+		scale: 1;
+	}
+}
+
+.next {
+	@include flexBox(flex, space-between, center, nowrap);
+
+	padding: 15px 0;
+}
+
+.next-box {
+	display: flex;
+	align-items: center;
+}
+.next-text {
+	@include textStyle(24px, 900, 50px, #2a2a2a);
+	font-family: "Serif pro";
+}
+.next-img-box {
+	display: flex;
+	align-items: center;
+
+	span {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $c-b;
+		@include flexBox(flex, center, center, nowrap);
+		margin: 0 10px;
+		cursor: pointer;
+		transition: all 0.5s ease;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
+
+.sell-in {
+	@include flexBox(flex, space-between, center, wrap);
+}
+
+.sell-line {
+	padding: 10px 0;
+	// margin: 0 auto;
+}
+.sell-item {
+	@include flexBox(flex, start, center, nowrap);
+	margin-bottom: 20px;
+
+	img {
+		margin-right: 15px;
+	}
+}
+
+.name-item {
+	@include textStyle(20px, 400, 30px, #2a2a2a);
+	font-family: "Serif pro";
+	max-width: 120px;
+}
+.price-item {
+	@include textStyle(25px, 800, 30px, #2a2a2a);
+	font-family: "Serif pro";
+}
+
+@media (max-width: 981px) {
+	.next {
+		flex-direction: column;
+		margin: 5px auto;
+		padding: 0;
+	}
+	.next-box {
+		border-top: 1px solid #999;
+		padding: 5px 0;
+
+		// border-bottom: 1px solid #999;
+	}
+}
+
+@media (max-width: 520px) {
+	
+
+	.sell-line{
+		margin: 0 auto;
+	}
+
+	
+}
+
+@media (max-width: 461px) {
+	.teas {
+		flex-direction: column;
+	}
+
+	.fantas {
+		background-image: url("../images/Rectangle\ 3fantaa-sea.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+
+	.lime {
+		background-image: url("../images/Rectangle\ 3lime-tea.png");
+		width: 100%;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+}

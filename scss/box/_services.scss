@@ -1,0 +1,90 @@
+.info-services-box {
+  background-color: #fff;
+  padding: 30px 0;
+}
+.info-content {
+  text-align: center;
+}
+.card-info-theme {
+ @include textStyle(34px, 900, 40px, #2a2a2a);
+  font-family: "Serif pro";
+  
+}
+.info-services {
+  padding-top: 30px;
+}
+.info-cards {
+	@include flexBox(flex, space-between, none, wrap);
+  
+}
+.info-cards-item {
+  width: 367px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.pho-box {
+	@include flexBox(flex, start, center, nowrap);
+  padding: 15px 0;
+  
+}
+.calendar {
+	@include flexBox(flex, center, center, nowrap);
+  margin-right: 20px;
+
+}
+.inco-cal {
+ @include textStyle(16px, 400, 19px, #2a2a2a);
+ font-family: "Serif pro";
+ margin-left: 7px;
+
+}
+.services-info-cards {
+ @include textStyle(20px, 900, 30px, #2a2a2a);
+ font-family: "Serif pro";
+ max-width: 282px;
+
+}
+.services-texts {
+  @include textStyle(16px, 400, 24px,  #757575);
+  font-family: "Serif pro";
+  padding-top: 10px;
+
+  a{
+  @include textStyle(19px, 500, 24px,  #757575);
+
+  }
+}
+
+
+@media (max-width:399px) {
+  .info-cards-item{
+    scale: 0.9;
+  }
+}
+
+@media (max-width:386px) {
+
+  .info-services{
+    padding: 0;
+
+  }
+  .info-cards-item{
+    scale: 0.8;
+  }
+}
+
+@media (max-width:364px) {
+  .info-cards{
+    overflow-x: scroll;
+	@include flexBox(flex, space-between, none, nowrap);
+  transform: translateY(-60px);
+
+  }
+
+  .info-cards-item{
+    scale: 0.7;
+    margin-left: -80px;
+
+    
+  }
+}

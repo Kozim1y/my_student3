@@ -1,0 +1,166 @@
+footer{
+  background-color: #191919;
+  padding: 62px 0 60px 0
+}
+.footer-in {
+	@include flexBox(flex, space-between, center, wrap);
+
+}
+.logo-line {
+  margin-bottom: 30px;
+}
+.logo-footer {
+  margin: 10px 0;
+}
+
+.logo-item {
+  margin: 5px 0;
+}
+.item-addres {
+  @include textStyle(14px, 400, 30px, #fff);
+  font-family: "Serif pro"
+}
+.linking {
+  margin: 0 8px;
+}
+
+.mt{
+  margin-top: 30px;
+}
+
+.f-item-link-big {
+  @include textStyle(16px, 900, 30px, #fff);
+  font-family: "Serif pro"
+}
+.f-item-link {
+  @include textStyle(14px, 400, 30px, #fff);
+  font-family: "Serif pro"
+}
+.connect-in {
+  @include textStyle(20px, 800, 30px, #fff);
+  font-family: "Serif pro"
+}
+.connect-in-info {
+  @include textStyle(14px, 400, 30px, #fff);
+  font-family: "Serif pro"
+}
+
+.typer{
+  margin-top: 25px;
+}
+
+.form-p{
+  padding: 25px 0;
+}
+
+.f-form-box {
+  display: flex;
+	align-items: center;
+  
+}
+
+.footer-type {
+	@include textStyle(16px, 600, 14px, #999);
+	font-family: "Serif pro";
+	border: none;
+	outline: none;
+	padding: 14px 140px 14px 10px;
+}
+.footer-btn { 
+   @include allBtn($bc-b, none, none, 16px 35px);
+	@include textStyle(14px, 600, 16px, #fff);
+	font-family: "Serif pro";
+}
+
+.social-line {
+	@include flexBox(flex, start, center, wrap);
+
+}
+.social-item {
+  margin-right: 26px;
+}
+
+
+.payments {
+	@include flexBox(flex, start, center, wrap);
+  padding-top: 50px;
+
+
+  
+}
+.pay-info {
+	@include textStyle(14px, 600, 40px, #fff);
+  font-family: "Serif pro"
+
+}
+.pay-line {
+	@include flexBox(flex, start, center, wrap);
+  margin-left: 300px;
+
+}
+.pay-item {
+  margin-right: 10px;
+}
+
+
+@media (max-width:1002px) {
+  .pay-line{
+    margin: 0;
+  }
+
+  .payments{
+	@include flexBox(flex, space-between, center, nowrap);
+
+  }
+  
+}
+
+@media (max-width:712px) {
+ 
+  .payments{
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width:512px) {
+
+  footer {
+    padding: 10px 0;
+  }
+  
+  .footer-type{
+    width: 100%;
+
+	padding: 14px 0px 14px 10px;
+
+  }
+  
+}
+
+
+@media (max-width:490px) {
+  .pay-info{
+    text-align: center;
+	@include textStyle(14px, 600, 20px, #fff);
+
+
+  }
+
+  .pay-line{
+    margin: 5px 0;
+  }
+}
+
+
+@media (max-width:480px) {
+  
+  .f-form-box{
+    flex-direction: column;
+
+   
+  }
+  .footer-btn{
+    margin-top: 7px;
+  }
+}

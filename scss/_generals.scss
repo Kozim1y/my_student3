@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Serif pro';
+  src: url(../fonts/SourceSansPro-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Serif pro';
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Serif pro';
+  src: url(../fonts/SourceSansPro-SemiBold.ttf);
+  font-weight: 600;
+}
+
+
+
+@font-face {
+  font-family: 'Serif pro';
+  src: url(../fonts/SourceSansPro-Bold.ttf);
+  font-weight: 900;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+}
+
+
